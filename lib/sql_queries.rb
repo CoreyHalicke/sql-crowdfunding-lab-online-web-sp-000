@@ -40,7 +40,7 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
 end
 
 =begin
-SELECT projects.title, 
+SELECT projects.title,
 FROM projects
 INNER JOIN pledges
 ON projects.id = pledges.project_id
