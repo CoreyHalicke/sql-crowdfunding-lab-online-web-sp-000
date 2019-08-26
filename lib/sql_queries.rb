@@ -16,6 +16,17 @@ SELECT * FROM pledges;
 
 =end
 
+=begin
+SELECT users.name, users.age, SUM(pledges.amount)
+FROM users
+INNER JOIN pledges
+ON users.id = pledges.user_id
+GROUP BY 
+ORDER BY 
+;
+
+=end
+
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
   "SELECT projects.title, SUM(pledges.amount)
    FROM projects
