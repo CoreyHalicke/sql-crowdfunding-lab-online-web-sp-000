@@ -14,11 +14,10 @@ SELECT * FROM projects;
 
 SELECT * FROM pledges;
 
-=end
 
-=begin
 
 =end
+
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
   "SELECT projects.title, SUM(pledges.amount)
@@ -40,6 +39,11 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
   ;"
 end
 
+=begin
+SELECT
+FROM
+;
+=end
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
   "Write your SQL query Here"
 end
