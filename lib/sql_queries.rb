@@ -55,7 +55,7 @@ end
 
 
 =begin
-SELECT 
+SELECT
 users.name,
 SUM(pledges.amount) AS pledged_amount
 FROM
