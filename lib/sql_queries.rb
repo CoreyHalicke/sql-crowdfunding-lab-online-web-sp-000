@@ -40,13 +40,17 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
 end
 
 =begin
-SELECT projects.title, SUM(pledges.amount)
-AS amount
+SELECT
+projects.title AS project_title,
+projects.funding_goal AS funding_goal,
+SUM(pledges.amount) AS pledge_amount,
+projects.funding_goal - SUM(pledges.amount) AS amount_left
 FROM projects
 INNER JOIN pledges
 ON projects.id = pledges.project_id
 GROUP BY projects.title
 ;
+
 =end
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
   "Write your SQL query Here"
